@@ -27,7 +27,23 @@ In this project, we have the following designs
 1. Show how entities can be setup
 2. Have substitutable components
 
-#Catalogues##
+##Catalogues##
  - catalogues are not "used" repeatedly
  - catalogues do not provide execution instructions
  - so they are information flow
+
+
+##prototype architecture##
+ - Pattern Repository
+ - Data Extractor
+
+ - Context Analyzer
+   - User Context Monitor
+   - Model Context Monitor
+   - Data Context Monitor
+
+ - Quality Evaluator
+ - Workflow Planner
+ - Data Preparator
+
+ - Data Miner 
