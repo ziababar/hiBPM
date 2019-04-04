@@ -3,8 +3,10 @@ The structure of the project is as follows.
 ##Actors##
 There are a number of actors in hiBPM. These can be individuals, departments, enterprises, or even technological systems. Each actor has certain objectives and motives.
 
+
 ##Processes##
 hiBPM process structures are shown as workflows that actors execute.
+
 
 ##Plans##
 In this project, we have the following plans
@@ -21,11 +23,13 @@ In this project, we have the following plans
        PS 2: execute the plan and create new reconfiguration
        PS 3: this new software system is then used in the process
 
+
 ##Designs##
 In this project, we have the following designs
 
 1. Show how entities can be setup
 2. Have substitutable components
+
 
 ##Catalogues##
  - catalogues are not "used" repeatedly
