@@ -1,14 +1,3 @@
 
 # Pattern Repository. This component stores a collection of solution patterns. Patterns can be expressed in standard, machine understandable formats (e.g., XML) so that the content can be queried and retrieved at run-time.
 
-# Data Extractor. It collects the raw data file(s) along with metadata information (e.g., variable types, label attribute flags). The component serves the Data Preparator and Data Context Monitor components.
-
-# Context Analyzer. This component is responsible for providing the status of context elements. It depends on the Pattern Repository to provide relevant context elements to be investigated. Given a pattern, this component parses the structure and generates a context analysis workflow (depending on structure of the graph). This allows for systematic discovery of alternatives for applying ML algorithms to the problem at hand, depending on which contexts hold. 
-
-# Quality Evaluator. This component is responsible for analyzing the influences of algorithms on (hierarchies of) softgoals. It recommends a list of algorithms to be included in or excluded from the workflow based on their influences on non-functional requirements. It depends on the Pattern Repository component to retrieve the list of relevant softgoals and also to retrieve the knowledge on how each algorithm is known to perform with respect to those softgoals. It also receives the importance and priority of softgoals from the Modeler.
-
-# Workflow Planner. This component is responsible for suggesting analysis scenarios to be performed on the dataset. It interprets the verified contexts along with candidate algorithms and specifies the order of actions to be executed by the Data Preparator and Data Miner components. It also ensures that the necessary data preparation and model configurations (e.g., parameter values) are collected and transmitted for the execution.
-
-# Data Preparator. This includes an implementation of a wide range of data preparation tasks and techniques such as data cleansing, noise removal, missing values treatment, data normalization, and data integration. It performs common data preparation and transformation tasks and generates the prepared data table that is ready to be consumed by the Data Miner component. This component depends on the Workflow Planner component to provide the list and order of the necessary preparation steps to be performed on the data. It also received the raw data from the Data Extractor component.
-
-# Data Miner. It includes an implementation of a wide range of ML algorithms and is responsible for executing algorithms on an input dataset, storing the fitted models, and reporting on evaluation metrics. This component depends on the Workflow Planner to provide a list of algorithms to be executed and metrics to be calculated. It receives the prepared dataset(s) from the Data Preparator.
