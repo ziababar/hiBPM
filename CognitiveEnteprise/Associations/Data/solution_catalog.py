@@ -2,5 +2,4 @@
 
 # Algorithms
 # Catalogues
-# Recommendation Engine
 
